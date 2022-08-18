@@ -1,0 +1,338 @@
+/*CSS Reset / Normalize*/
+
+:root{
+   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+
+
+/*Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*SECCION MENU*/
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color:lightskyblue;
+}
+.menu__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__title{
+    padding: 1em;
+    font-size: 1.4em;
+}
+.menu__list{
+    display: flex;
+    font-size: 1.3em;
+}
+.menu__list__item{
+    padding: 1em;
+}
+
+/*SECCION TITULO*/
+.title{
+        background-color:cornflowerblue;
+}
+.title__div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 2em;
+}
+.title__profile{
+    border-radius:100%;
+    padding: 2em;
+}
+.title__bio{
+    font-size:3.5em;
+    font-weight:bold; 
+}
+.title__subsection{
+    font-size: 2em;
+}
+.title__network{
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+    
+}
+
+
+/*SECCION SOBRE MI*/
+.about{
+    background-color: #cfcac4; 
+}
+.about__title{
+    font-size: 3em;
+    padding: 1em;
+    margin:0;
+}
+.about__paragraph{
+    font-size: 1.5em;
+    margin: 0 10em 2em 2em;
+}
+.about__firma{
+   padding: 2em;
+}
+
+/*SECCION SKILLS & OTROS*/
+.skills ,.otros{
+    background-color: rgb(154, 203, 221);
+    padding: 2em;
+}
+.skills__title, .otros__title{
+    font-size: 2em;
+    text-align: center;
+}
+.skills__list, .otros__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills__name , .otros__name{
+    margin: 2%;
+    background-color: #FFF;
+	box-shadow: 0.7em 0.7em #CCC;
+    height: 5em;
+    width: 5em;
+    font-size: 1.7em;
+    color: blue;
+    text-align: center;
+      
+}
+
+/* SECCION ESTUDIOS */
+.academic{
+    background-color: rgb(102, 86, 158);
+}
+.academic__title{
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em;
+}
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.academic__courses__box{
+    padding: 0.5em;
+}
+
+/* SECCION EXPERIENCIA LABORAL */
+.laboral{
+    background-color: aliceblue;
+}
+.laboral__title{
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em;
+}
+.laboral__empresa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+/* SECCION PROYECTOS IT */
+.proyectos{
+    background-color: cornflowerblue;
+}
+.proyectos__section__title{
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em;
+}
+.proyectos__box{
+    text-align: center;
+    padding: 1em;
+}
+.proyectos__boton--repo, .proyectos__boton--demo{
+    width: 6em;
+    height: 3em; 
+    border-radius: 1em;
+    font-size: 20px;
+    margin: 1em;
+}
+.proyectos__boton--repo:hover, .proyectos__boton--demo:hover{
+    background-color: blueviolet; 
+    cursor: pointer;
+}
+
+/* SECCION CONTACTO */
+.formcontacto{
+    background-color: rgb(146, 153, 134);
+}
+.formcontacto--imagen{
+    float: left;
+    margin: 0.5em 1em 0 1em;
+}
+.formcontacto__title{
+    margin: 0;
+    font-size: 2em;
+    padding: 0.5em;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+.input {
+    box-sizing: border-box;
+    border-bottom: 1px solid;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+}
+  
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+.input:focus {
+    outline: none;
+}
+  
+.input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    transition: all 0.25s;
+}
+  
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+}
+.textarea {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+}
+.textarea-container {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+  
+.textarea::placeholder {
+    visibility: hidden;
+}
+  
+.textarea:focus {
+    outline: none;
+}
+  
+.textarea-label {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    transition: all 0.25s;
+}
+  
+.textarea:not(:placeholder-shown) + .textarea-label,
+.textarea:focus + .textarea-label {
+    font-size: 0.875rem;
+    top: -0.25rem;
+    transition: all 0.25s;
+}
+.formcontacto__boton{
+    background-color: brown;
+    color: #CCC;
+    font-size: 1.5em;
+    height: 3em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    margin: 0.7em;
+}
+.input-message-error{
+    display: none;
+}
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+}
+  
+.input-container--invalid .input {
+    border-radius: 7px;
+}
+  
+.input-container--invalid .input-label {
+    color: red;
+}
+  
+.input-message-error {
+    display: none;
+    color: red;
+}
+  
+.input-container--invalid .input-message-error {
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* SECCION PIR DE PAGINA */
+.footer{
+    background-color: aqua;
+    
+}
+.pie{
+    margin: 0;
+}
+.footer__pie-de-pagina{
+    text-align: center;
+    padding: 1em;
+}
+
+/* SECCION RESPONSIVIDAD */
+/*Tablet*/
+@media (min-width: 768px) and (max-width:1024px){
+    .menu__list{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+/*Mobile*/
+@media (min-width: 425px) and (max-width: 767px) {
+    .menu__list{
+    flex-direction: column;
+    text-align: right;
+    }
+    .menu__list__item{
+        padding: 0.5em;
+    }
+    .title__div{
+        flex-direction: column;
+        padding: 2em;
+    }
+    .title__network{
+        flex-direction: column;
+    }
+}
